@@ -8,7 +8,13 @@
     "build": "tsc && vite build",
     "preview": "vite preview --host",
     "lighting01build": "tsc && vite build lighting01",
-    "lighting01preview": "vite preview lighting01 --host"
+    "lighting01preview": "vite preview lighting01 --host",
+    "motion03build": "tsc && vite build motion03",
+    "motion03preview": "vite preview motion03 --host",
+    "collisions03build": "tsc && vite build collisions03",
+    "collisions03preview": "vite preview collisions03 --host",
+    "collisions03V2build": "tsc && vite build collisions03V2",
+    "collisions03V2preview": "vite preview collisions03V2 --host"
   },
   "devDependencies": {
     "typescript": "~5.6.2",
@@ -16,6 +22,7 @@
   },
   "dependencies": {
     "@babylonjs/core": "^7.35.0",
+    "@babylonjs/gui": "^7.36.0",
     "@babylonjs/havok": "^1.3.10",
     "@babylonjs/loaders": "^7.35.0"
   }

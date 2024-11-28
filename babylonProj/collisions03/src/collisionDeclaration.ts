@@ -78,12 +78,11 @@ export function collisionDeclaration(runScene : SceneData){
         playerAggregate.body.setMassProperties({
           inertia: new Vector3(0, 0.0, 0.0), 
         });
-        playerAggregate.body.setAngularVelocity(new Vector3(0, 12, 0));
         
+        playerAggregate.body.setAngularVelocity(new Vector3(0, 12, 0));
         playerAggregate.body.applyImpulse (new Vector3(0, 0, 0),character.position);
-
         playerAggregate.body.disablePreStep = false;
         playerAggregate.body.setCollisionCallbackEnabled(true);
-        
+  
       });
 }
