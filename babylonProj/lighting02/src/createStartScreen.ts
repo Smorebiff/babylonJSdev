@@ -26,9 +26,9 @@ import { Scene,
 function createHemisphericLight(scene: Scene ){
   const light:HemisphericLight = new HemisphericLight("light", new Vector3(1, 10, 0),scene);
   light.intensity = 0.3;
-  light.diffuse = new Color3(1, 0, 0);
-  light.specular = new Color3(0, 1, 0);
-  light.groundColor = new Color3(0, 1, 0);
+  light.diffuse = new Color3(100, 0, 0);
+  light.specular = new Color3(0, 100, 0);
+  light.groundColor = new Color3(0, 100, 0);
   return light;
 }
 

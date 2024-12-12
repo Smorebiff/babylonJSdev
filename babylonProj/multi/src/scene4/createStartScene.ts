@@ -18,26 +18,26 @@ import {
   
   function createTube(scene: Scene) {
     const myPath = [
-      new Vector3(1.85, 0.85, 0.85),
-      new Vector3(1.35, 0.35, 0.35),
+      new Vector3(3.85, 2.85, 2.85),
+      new Vector3(5.35, 1.35, 1.35),
     ];
   
     const tube = MeshBuilder.CreateTube(
       "tube",
-      { path: myPath, radius: 0.4, sideOrientation: Mesh.DOUBLESIDE },
+      { path: myPath, radius: 0.7, sideOrientation: Mesh.DOUBLESIDE },
       scene
     );
   
     var texture = new StandardMaterial("reflective", scene);
     texture.ambientTexture = new Texture("./assets/reflectivity.png", scene);
-    texture.diffuseColor = new Color3(1, 1, 1);
+    texture.diffuseColor = new Color3(3, 0, 2);
     tube.material = texture;
     return tube;
   }
 
   
   function createLight(scene: Scene) {
-    const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
+    const light = new HemisphericLight("light", new Vector3(7, 1, 2), scene);
     light.intensity = 0.7;
     return light;
   }
@@ -45,10 +45,10 @@ import {
   function createSphere(scene: Scene) {
     let sphere = MeshBuilder.CreateSphere(
       "sphere",
-      { diameter: 2, segments: 32 },
+      { diameter: 1, segments: 32 },
       scene,
     );
-    sphere.position.y = 1;
+    sphere.position.y = 1.5;
     return sphere;
   }
   

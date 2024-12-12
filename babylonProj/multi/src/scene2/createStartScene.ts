@@ -19,7 +19,7 @@ import {
   function createCylinder(scene: Scene) {
     let cylinder = MeshBuilder.CreateCylinder(
       "cylinder",
-      { height: 1, diameter: 0.7 },
+      { height: 20, diameter: 1.4 },
       scene
     );
     cylinder.position.x = 1;
@@ -28,7 +28,7 @@ import {
   
     var texture = new StandardMaterial("reflective", scene);
     texture.ambientTexture = new Texture("./assets/reflectivity.png", scene);
-    texture.diffuseColor = new Color3(1, 1, 1);
+    texture.diffuseColor = new Color3(200, 1, 1);
     cylinder.material = texture;
     return cylinder;
   }
@@ -36,17 +36,17 @@ import {
   
   function createLight(scene: Scene) {
     const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
-    light.intensity = 0.7;
+    light.intensity = 10;
     return light;
   }
   
   function createSphere(scene: Scene) {
     let sphere = MeshBuilder.CreateSphere(
       "sphere",
-      { diameter: 2, segments: 32 },
+      { diameter: 7, segments: 32 },
       scene,
     );
-    sphere.position.y = 1;
+    sphere.position.y = 2;
     return sphere;
   }
   

@@ -16,7 +16,9 @@
     "collisions03V2build": "tsc && vite build collisions03V2",
     "collisions03V2preview": "vite preview collisions03V2 --host",
     "gui04build": "tsc && vite build gui04",
-    "gui04preview": "vite preview gui94 --host"
+    "gui04preview": "vite preview gui04 --host",
+    "multibuild": "vite build multi",
+    "multipreview": "vite preview multi --host"
   },
   "devDependencies": {
     "typescript": "~5.6.2",

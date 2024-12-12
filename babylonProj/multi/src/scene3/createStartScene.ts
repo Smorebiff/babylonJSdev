@@ -19,7 +19,7 @@ import {
   function createTorus(scene: Scene) {
     let torus = MeshBuilder.CreateTorus(
       "torus",
-      { diameter: 0.7, thickness: 0.6, tessellation: 10 },
+      { diameter: 0.9, thickness: 2, tessellation: 10 },
       scene
     );
     torus.position.x = -1;
@@ -37,17 +37,18 @@ import {
   
   function createLight(scene: Scene) {
     const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
-    light.intensity = 0.7;
+    light.intensity = 20;
     return light;
   }
   
   function createSphere(scene: Scene) {
     let sphere = MeshBuilder.CreateSphere(
       "sphere",
-      { diameter: 2, segments: 32 },
+      { diameter: 10, segments: 32 },
       scene,
     );
     sphere.position.y = 1;
+    sphere.position.x = 5;
     return sphere;
   }
   

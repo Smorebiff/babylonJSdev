@@ -1,8 +1,6 @@
-import { Engine} from "@babylonjs/core";
-import createStartScene from "/workspaces/babylonJSdev/babylonProj/multi/src/scene1/createStartScene.ts";
-import createRunScene from "/workspaces/babylonJSdev/babylonProj/multi/src/scene1/createRunScene.ts";
-import "./main.css";
-
+import { Engine } from "@babylonjs/core";
+import createStartScene from "/workspaces/babylonJSdev/babylonProj/shapes01/src/createStartScene.ts";
+import './main.css';
 
 const CanvasName = "renderCanvas";
 
@@ -14,8 +12,6 @@ document.body.appendChild(canvas);
 
 let eng = new Engine(canvas, true, {}, true);
 let startScene = createStartScene(eng);
-createRunScene(startScene);
-
 eng.runRenderLoop(() => {
-  startScene.scene.render();
-});
+    startScene.scene.render();
+});     
