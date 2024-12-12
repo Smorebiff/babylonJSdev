@@ -7,14 +7,16 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
-    "lighting01build": "tsc && vite build lighting01",
-    "lighting01preview": "vite preview lighting01 --host",
-    "motion03build": "tsc && vite build motion03",
-    "motion03preview": "vite preview motion03 --host",
+    "lighting02build": "tsc && vite build lighting02",
+    "lighting02preview": "vite preview lighting02 --host",
+    "villagebuild": "tsc && vite build village",
+    "villagepreview": "vite preview village --host",
     "collisions03build": "tsc && vite build collisions03",
     "collisions03preview": "vite preview collisions03 --host",
     "collisions03V2build": "tsc && vite build collisions03V2",
-    "collisions03V2preview": "vite preview collisions03V2 --host"
+    "collisions03V2preview": "vite preview collisions03V2 --host",
+    "gui04build": "tsc && vite build gui04",
+    "gui04preview": "vite preview gui94 --host"
   },
   "devDependencies": {
     "typescript": "~5.6.2",
